@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mixify - More of What You Want.</title>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script src="/mixify.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://use.fontawesome.com/fa8a3e3bc1.js"></script>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+</head>
+<body>
+
+<script id="loggedin-template" type="text/x-handlebars-template">
+   <h1>Logged in as {{display_name}}</h1>
+   <img id="avatar" width="200" src="{{images.0.url}}" />
+   <dl>
+    <dt>Display name</dt><dd>{{display_name}}</dd>
+    <dt>Username</dt><dd>{{id}}</dd>
+    <dt>Email</dt><dd>{{email}}</dd>
+    <dt>Spotify URI</dt><dd><a href="{{external_urls.spotify}}">{{external_urls.spotify}}</a></dd>
+    <dt>Link</dt><dd><a href="{{href}}">{{href}}</a></dd>
+    <dt>Profile Image</dt><dd>{{images.0.url}}</dd>
+   </dl>
+   <p><a href="/">Log in again</a></p>
+</script>
+
+
+<nav class="z-depth-0">
+   <div class="nav-wrapper">
+     <a href="/" class="brand-logo center"><i class="fa fa-spotify" aria-hidden="true"></i><b style>Mixify</b></a>
+     <ul id="nav-mobile" class="left hide-on-med-and-down">
+       <li><a href="/login">Spotify Login</a></li>
+       <li><a href="https://github.com/jeremytoce">Github</a></li>
+       <li><a href="https://www.linkedin.com/in/jeremytoce">Jeremy Toce</a></li>
+     </ul>
+   </div>
+ </nav>
+
+ <div class="row">
+
+
+ 	<div class="col s6 leftSide">
+ 		
+ 	<div class = 'titleSearch'>
+ 		<h2 class = 'center-align'><b>Let's Mix It Up.</b></h2>
+    <div>
+      <p style="text-align: center; font-size: 20px;">Enter up to four of your favorite artists below to create a custom playlist of music we think you'll love.
+    </div>
+ 		<form class = "artistSearch">
+ 			<input type="text" class="artistName" name="input" style="width: 80%; margin-left: 10%" placeholder="Input an artist name and press enter!"></input>
+ 		</form>
+ 	</div>
+
+
+        <div style="padding-top: 5%">
+ 			<ul class="collection">
+
+ 			  <li class="collection-item avatar">
+ 			    <img src="https://lh3.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=w300-rw" alt="" class="circle avatar1">
+ 			    <span class="title t1">Artist Number 1</span>
+ 			    <p class="genre1">Genre <br>
+ 			       
+ 			    </p>
+ 			    <a href="" class="secondary-content"><i class="material-icons">Remove</i></a>
+ 			  </li>
+
+ 			  <li class="collection-item avatar">
+ 			    <img src="https://lh3.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=w300-rw" alt="" class="circle avatar2">
+ 			    <span class="title t2">Artist Number 2</span>
+ 			    <p class="genre2">Genre <br>
+ 			       
+ 			    </p>
+ 			    <a href="" class="secondary-content"><i class="material-icons">Remove</i></a>
+ 			  </li>
+
+ 			  <li class="collection-item avatar avatar3">
+ 			    <img src="https://lh3.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=w300-rw" alt="" class="circle avatar3">
+ 			    <span class="title t3">Artist Number 3</span>
+ 			    <p class="genre3">Genre <br>
+ 			       
+ 			    </p>
+ 			    <a href="#!" class="secondary-content"><i class="material-icons">Remove</i></a>
+ 			  </li>
+ 			  <li class="collection-item avatar">
+ 			   <img src="https://lh3.googleusercontent.com/UrY7BAZ-XfXGpfkeWg0zCCeo-7ras4DCoRalC_WXXWTK9q5b0Iw7B0YQMsVxZaNB7DM=w300-rw" alt="" class="circle avatar4">
+ 			    <span class="title t4">Artist Number 4</span>
+ 			    <p class="genre4">Genre <br>
+ 			       
+ 			    </p>
+ 			    <a href="#!" class="secondary-content"><i class="material-icons">Remove</i></a>
+ 			  </li>
+ 			</ul>
+
+ 			<a class="waves-effect center-align waves-light btn-large mixify">Mixify!</a>
+        </div>
+
+
+ 	</div>
+
+
+ 	<div class="col s6 rightSide">
+ 		
+ 		<div class="card">
+ 		  <div class="card-image waves-effect waves-block waves-light" style="height: 450px; float: left !important;">
+ 		    <img class="activator artistImage" src="https://1.bp.blogspot.com/-n_VCCVIjLN4/V5LoI2YfiiI/AAAAAAAAIqQ/9xMpMuzCrFkIp9MP1_B7MKUi_GCxqN0lwCLcB/s1600/This%2BTown%2BNeeds%2BGuns.jpg">
+ 		  </div>
+ 		  <div class="card-content">
+ 		    <span class="card-title activator grey-text text-darken-4 artistName" style = "font-weight: bold">This Town Needs Guns<i class="material-icons right">Details</i></span>
+ 		    <p><a href="#" class="addToFavorites">Add Artist to Mix</a></p>
+ 		  </div>
+ 		  <div class="card-reveal">
+ 		    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+ 		    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+ 		  </div>
+ 		</div>
+ 	</div>
+
+
+ </div>
+
+
+
+</body>
+</html>

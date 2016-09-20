@@ -1,0 +1,33 @@
+- setting up NPM and dependencies
+- made sample request
+- set up sample client page
+- installed client-side dependencies
+- sample request from client to server, server to spotify
+- installed CORS to fix cross origin request issues
+- installed request promise, remove bluebird and request 
+- Had artist name request pull in correctly
+
+
+
+
+ISSUES
+
+Fix routing so it is working with html files in a root client folder
+Potentially fix CORS issue
+
+
+FEATURES TO IMPLEMENT 
+
+- real time artist dropdown during initial search
+
+
+ROADMAP CHECKPOINTS
+
+- create artist storage with names
+- don't allow duplicate entries
+- make a call on 5 similar artists for each input artist
+
+- find those artists top 3 songs
+- push to array
+- randomize array
+- return first 20 results

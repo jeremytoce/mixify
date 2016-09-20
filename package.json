@@ -1,0 +1,24 @@
+{
+  "name": "Mixify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/server.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "http": "0.0.0",
+    "nodemon": "^1.10.2",
+    "path": "^0.12.7",
+    "q": "^1.4.1",
+    "querystring": "^0.2.0",
+    "request": "^2.74.0"
+  }
+}

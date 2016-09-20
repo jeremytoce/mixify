@@ -1,0 +1,33 @@
+body {
+    height: 100%;
+    background: linear-gradient(90deg, white 50%, #383838 50%);
+}
+
+.centerAlign {
+    text-align: center;
+}
+
+.rightSide {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-wrapper {
+    background-color: #2EBD59 !important;
+}
+
+.btn-large {
+    width: 100%;
+    background-color: #383838 !important;
+    border-radius: 50px !important;
+
+}
+
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 92.75%;
+  left:80%;  
+}
