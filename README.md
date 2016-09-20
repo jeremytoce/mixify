@@ -20,6 +20,12 @@ A Spotify recommendation engine that intelligently creates playlists for you. Cr
 - When you have added all the artists you wish to add, press the "Mixify!" button at the bottom
 - Enjoy your new playlist!
 
+## Known Bugs
+
+- Artist remove functionality does not work as expected
+- UI Resizing issues at mobile screen size
+
+
 ## Contributing
 
 1. Fork it!
