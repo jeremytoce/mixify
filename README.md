@@ -1,6 +1,7 @@
 # MIXIFY
 A Spotify recommendation engine that intelligently creates playlists for you. Created with the Spotify API.
 
+![Alt text](https://www.evernote.com/l/AtUp750I3MFE75cHye_5rf_G8Bm-4cDjIdA "Mixify App")
 ## Installation
 - Clone down the repo 
 - Install NPM dependencies in terminal (npm install)
