@@ -3,7 +3,6 @@ const request = require('request');
 const bodyParser = require('body-parser');
 const path = require('path');
 const cors = require('cors');
-var rp = require('request-promise');
 const querystring = require('querystring');
 const cookieParser = require('cookie-parser');
 
